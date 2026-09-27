@@ -1,0 +1,6 @@
+name: BuildRoulette
+version: 1.0.0
+main: ru.hideworld.buildroulette.BuildRoulettePlugin
+api-version: '1.21'
+author: HideWorld
+description: Roulette for a five-block build structure

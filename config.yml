@@ -1,0 +1,56 @@
+roulette-title: '&8✦ &6Рулетка &8✦'
+roulette-duration-ticks: 100
+
+messages:
+  activated: '&6&lРУЛЕТКА &8» &fПостройка активирована. Запускаем рулетку!'
+  win: '&6&lРУЛЕТКА &8» &fВаш приз: %reward%'
+
+# Конструкция: 3 блока в нижнем ряду + 2 блока над центральным.
+# Материалы не проверяются: подойдут любые блоки, кроме воздуха.
+# Фигуру можно строить вдоль X или Z.
+
+rewards:
+  starter_kit:
+    name: '&aКит &fStarter'
+    material: IRON_SWORD
+    chance: 45
+    lore:
+      - '&7Стартовый набор для выживания'
+    commands:
+      - 'kit starter %player%'
+
+  vip_kit:
+    name: '&bКит &fVIP'
+    material: DIAMOND_CHESTPLATE
+    chance: 25
+    lore:
+      - '&7Улучшенный набор ресурсов'
+    commands:
+      - 'kit vip %player%'
+
+  money:
+    name: '&6$10 000'
+    material: GOLD_INGOT
+    chance: 20
+    lore:
+      - '&7Деньги на игровой баланс'
+    commands:
+      - 'eco give %player% 10000'
+
+  vip_day:
+    name: '&aVIP &7на 1 день'
+    material: EMERALD
+    chance: 8
+    lore:
+      - '&7Временная привилегия VIP'
+    commands:
+      - 'lp user %player% parent addtemp vip 1d'
+
+  premium_day:
+    name: '&dPremium &7на 1 день'
+    material: NETHER_STAR
+    chance: 2
+    lore:
+      - '&7Редкая временная привилегия'
+    commands:
+      - 'lp user %player% parent addtemp premium 1d'
